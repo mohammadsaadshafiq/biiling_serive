@@ -10,8 +10,8 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-  @EventPattern('order_created')
+  @EventPattern('order_Created')
   handleOrderCreated(data: any) {
-    this.appService.handleORderCreated(data.value);
+    this.appService.handleORderCreated(data);
   }
 }
